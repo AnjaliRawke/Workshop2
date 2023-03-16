@@ -22,7 +22,7 @@ public class CompanyMain {
 		companyMap.put(company1.getName(),company1);
 		companyMap.put(company2.getName(),company2);
 
-		for(String companyName : companyMap.keySet()){
+		for(Map.Entry companyName : companyMap.entrySet()){
 			Company company = companyMap.get(companyName);
 			System.out.println("Company Name: " + company.getName() + " \nEmployees: " );
 			for (Employee employee : company.getEmployees()){
