@@ -1,12 +1,12 @@
 package com.bridgelabz;
 
 public class Employee {
-	String name;
-	int age;
-	int phoneNumber;
-	String city;
-	String state;
-	String department;
+	private String name;
+	private int age;
+	private int phoneNumber;
+	private String city;
+	private String state;
+	private String department;
 
 	public Employee(String name, int age, int phoneNumber, String city, String state, String department) {
 		this.name = name;
@@ -63,5 +63,17 @@ public class Employee {
 
 	public void setDepartment(String department) {
 		this.department = department;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee{" +
+				"name='" + name + '\'' +
+				", age=" + age +
+				", phoneNumber=" + phoneNumber +
+				", city='" + city + '\'' +
+				", state='" + state + '\'' +
+				", department='" + department + '\'' +
+				'}';
 	}
 }

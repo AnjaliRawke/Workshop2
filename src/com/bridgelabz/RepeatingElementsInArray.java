@@ -3,7 +3,7 @@ package com.bridgelabz;
 import java.util.Arrays;
 
 public class RepeatingElementsInArray {
-	public static void countFreq(int arr[],int n)
+	public static void RepeatingElements(int arr[],int n)
 	{
 		boolean visited[] = new boolean[n];
 		Arrays.fill(visited,false);
@@ -25,6 +25,6 @@ public class RepeatingElementsInArray {
 	public static void main(String[] args) {
 		int arr[] = new int[]{1,2,3,4,2,7,8,8,3,3,1};
 		int n = arr.length;
-		countFreq(arr,n);
+		RepeatingElements(arr,n);
 	}
 }

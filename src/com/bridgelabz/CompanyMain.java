@@ -23,12 +23,12 @@ public class CompanyMain {
 		companyMap.put(company2.getName(),company2);
 
 		for(Map.Entry companyName : companyMap.entrySet()){
-			Company company = companyMap.get(companyName);
-			System.out.println("Company Name: " + company.getName() + " \nEmployees: " );
-			for (Employee employee : company.getEmployees()){
-				System.out.println( "Name: " + employee.getName() + " Age: " + employee.getAge() + " PhoneNumber: " + employee.getPhoneNumber() + " City: " + employee.getCity() + "State: " + employee.getState() + " Department: " + employee.getDepartment());
-			}
+			System.out.println(companyName.getKey() + " " + companyName.getValue());
+//			Company company = companyMap.get(companyName);
+//			System.out.println("Company Name: " + company.getName() + " \nEmployees: " );
+//			for (Employee employee : company.getEmployees()){
+//				System.out.println( "Name: " + employee.getName() + " Age: " + employee.getAge() + " PhoneNumber: " + employee.getPhoneNumber() + " City: " + employee.getCity() + "State: " + employee.getState() + " Department: " + employee.getDepartment());
+//			}
 		}
-
 	}
 }

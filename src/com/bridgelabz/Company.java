@@ -12,6 +12,7 @@ public class Company {
 	}
 
 	public void addEmployee(Employee employee){
+
 		employees.add(employee);
 	}
 
@@ -29,5 +30,13 @@ public class Company {
 
 	public void setEmployees(ArrayList<Employee> employees) {
 		this.employees = employees;
+	}
+
+	@Override
+	public String toString() {
+		return "Company{" +
+				"name='" + name + '\'' +
+				", employees=" + employees +
+				'}';
 	}
 }
