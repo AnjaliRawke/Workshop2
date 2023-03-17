@@ -3,8 +3,9 @@ package com.bridgelabz;
 import java.util.Arrays;
 
 public class RepeatingElementsInArray {
-	public static void RepeatingElements(int arr[],int n)
+	public static void RepeatingElements(int arr[])
 	{
+		int n = arr.length;
 		boolean visited[] = new boolean[n];
 		Arrays.fill(visited,false);
 		for (int i = 0; i < n; i++) {
@@ -23,8 +24,7 @@ public class RepeatingElementsInArray {
 	}
 
 	public static void main(String[] args) {
-		int arr[] = new int[]{1,2,3,4,2,7,8,8,3,3,1};
-		int n = arr.length;
-		RepeatingElements(arr,n);
+		int arr[] = new int[]{1,1,2,3,4,4,2,7,8,8,3,3,1};
+		RepeatingElements(arr);
 	}
 }
